@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reSpotIt β€” Spotify Library Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #121212; color: #fff; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+    h1 { font-size: 3rem; margin-bottom: 8px; }
+    .tagline { color: #B3B3B3; font-size: 1.2rem; margin-bottom: 32px; }
+    .logo { width: 120px; height: 120px; margin: 0 auto 24px; border-radius: 24px; }
+    .btn { display: inline-block; padding: 14px 32px; background: #1DB954; color: #000; font-weight: 700; text-decoration: none; border-radius: 999px; margin: 8px; }
+    .btn:hover { background: #1ed760; }
+    .btn-secondary { background: #333; color: #fff; }
+    .section { margin-top: 48px; text-align: left; }
+    .section h2 { color: #1DB954; }
+    .section p { color: #B3B3B3; line-height: 1.6; }
+    .repo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 24px; }
+    .repo-card { background: #1a1a1a; border-radius: 12px; padding: 20px; text-align: left; }
+    .repo-card h3 { margin: 0 0 8px; color: #fff; }
+    .repo-card p { color: #B3B3B3; font-size: 0.9rem; margin: 0 0 12px; }
+    .repo-card a { color: #1DB954; text-decoration: none; font-size: 0.85rem; }
+    footer { margin-top: 64px; color: #535353; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="icon-192x192.png" alt="reSpotIt logo" />
+    <h1>reSpotIt</h1>
+    <p class="tagline">A multi-platform Spotify library dashboard.</p>
+
+    <div>
+      <a class="btn" href="https://github.com/damianoshar/reSpotIt-react-version-stage/releases/latest">Download Android (React)</a>
+      <a class="btn" href="https://github.com/damianoshar/reSpotIt-kotlin-version-stage/releases/latest">Download Android (Kotlin)</a>
+      <a class="btn btn-secondary" href="https://github.com/damianoshar/reSpotIt-local-server-app-stage/releases/latest">Desktop App</a>
+    </div>
+
+    <div class="section">
+      <h2>Repositories</h2>
+      <div class="repo-grid">
+        <div class="repo-card">
+          <h3>React Android App</h3>
+          <p>React 18 + Vite + Capacitor 6. Browse saved albums, filter, sort, manage playlists, sync, queue control.</p>
+          <a href="https://github.com/damianoshar/reSpotIt-react-version-stage">Source</a> Β·
+          <a href="https://github.com/damianoshar/reSpotIt-react-version-stage/releases">Releases</a>
+        </div>
+        <div class="repo-card">
+          <h3>Kotlin Android App</h3>
+          <p>Native Kotlin/Compose. Full feature parity with the React app.</p>
+          <a href="https://github.com/damianoshar/reSpotIt-kotlin-version-stage">Source</a> Β·
+          <a href="https://github.com/damianoshar/reSpotIt-kotlin-version-stage/releases">Releases</a>
+        </div>
+        <div class="repo-card">
+          <h3>Local Server App</h3>
+          <p>Python FastAPI backend + React frontend. Docker or Windows desktop app. Library server with web UI.</p>
+          <a href="https://github.com/damianoshar/reSpotIt-local-server-app-stage">Source</a> Β·
+          <a href="https://github.com/damianoshar/reSpotIt-local-server-app-stage/releases">Releases</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Features</h2>
+      <p>Browse saved albums with rich filters (genre, artist, year, decade, popularity). Multiple view modes. Playlist management. Duplicate detection. Queue control. Sync library. Export/backup CSV. Device transfer. On-device librespot player (experimental). Offline support.</p>
+    </div>
+
+    <footer>
+      &copy; 2026 reSpotIt. Not affiliated with Spotify. MIT License.
+    </footer>
+  </div>
+</body>
+</html>
